@@ -34,7 +34,6 @@ def backtracking(queen_positions, domains, n):
     new_domain = lcv(domains, row, unassigned_rows)
 
     for value in new_domain:
-        # Tentatively assign
         queen_positions[row] = value
         old_domain = domains[row]
         domains[row] = [value]
